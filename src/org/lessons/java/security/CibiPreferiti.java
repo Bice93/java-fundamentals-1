@@ -13,7 +13,7 @@ public class CibiPreferiti {
 		System.out.println("Il mio cibo preferito è: " + foods[0] );
 		
 		//Stampo l'ultimo piatto
-		System.out.println("Il mio cibo preferito ma non troppo: " + foods[7] );
+		System.out.println("Il mio cibo preferito ma non troppo: " + foods[foods.length - 1] );
 	}
 
 }
