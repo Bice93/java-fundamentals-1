@@ -19,17 +19,20 @@ public class CheckGuest {
 		boolean isPresent = false;
 		
 		//Controllo se il nome è presente nella lista
-		for (int i = 0; i <= guests.length; i++) {
-			if(Arrays.asList(guests).contains(nameGuest)) {
-					isPresent = true;
-			};
+		for (int i = 0; i < guests.length; i++) {
+
+			if(nameGuest.equalsIgnoreCase(guests[i])) {
+				isPresent = true;
+		};
 		};
 		
 		if (isPresent) {
 			System.out.println("Ciao " + nameGuest + ", puoi entrare!");			
 		} else {
 			System.out.println("Ciao " + nameGuest + ", non sei nella lista, non puoi entrare!");
-		}
+		};
+		
+		inputName.close();
 		
 		};
 
